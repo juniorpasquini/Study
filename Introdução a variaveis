@@ -1,0 +1,16 @@
+# Variáveis são usadas para salvar algo na memória do computador.
+# PEP8: Inicie variáveis com letras minúsculas, pode usar números e underline, mas não pode começar com número.
+# O sinal de = é o operador de atribuição. ele é usado para atribuir um valor a uma variável.
+# uso: o nome_da_variavel = expressão
+# o nome da variável é o rótulo, a etiqueta, o nome do endereço de memória onde o valor está armazenado.
+# nome_completo ='Luiz Otávio Miranda'
+# soma_dois_mais_dois = 2 + 2
+# int_um = bool ('1')
+# print (int_um, type (int_um))
+# print (nome_completo, soma_dois_mais_dois)
+
+nome = 'junior'
+idade = 25
+maior_de_idade = idade >= 18
+print ('nome:', nome, 'idade:', idade)
+print ('é maior?', maior_de_idade)
