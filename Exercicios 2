@@ -1,0 +1,17 @@
+# Exercicio 01 - Crie uma variável "Base = 2" e "expoente = 10"
+
+# Calcule a potencia usando o operador correto
+# Crie uma variável mensagem = 'o resultado é: '
+# Cse uma f-string para imprimir a mensagem e o resultado da potência juntos
+
+base = 2
+expoente = 10
+o_resultado_e = base ** expoente
+
+linha_1= f'{base}' 
+linha_2= f'{expoente}'
+linha_3= f'O resultado é {o_resultado_e}'
+
+print (linha_3)
+
+
