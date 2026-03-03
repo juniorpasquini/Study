@@ -1,0 +1,7 @@
+#o que são strings?
+#strings são textos dentro de aspas simples ou duplas
+#exemplos de strings
+
+print('Olá, mundo!')
+
+print ('explicito', 'é', 'melhor', 'do', 'que', 'implicito', sep='-') 
