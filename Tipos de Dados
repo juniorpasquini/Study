@@ -1,0 +1,30 @@
+# Tipos int e float
+# Int -> Número Inteiros
+# O tipo int representa qualquer número
+# positivo ou negativo. Int sem sinal é considerado positivo. O tipo int tem precisão ilimitada, ou seja, pode representar números 
+# muito grandes ou muito pequenos sem perda de precisão.
+
+print (11) #int
+print (-11) #int 
+print (0) #int
+
+# float -> Número com ponto flutuante
+# o tipo float representa qualquer número
+# positivo ou negativo com ponto flutuante.
+# float sem sinal é considerado positivo.
+# a função do ponto é separar a parte inteira da parte decimal do número. O tipo float tem precisão limitada, ou seja, 
+# pode representar números muito grandes ou muito pequenos, mas com uma precisão limitada a cerca de 15 dígitos decimais.
+# a função da virgula é separar os valores em uma lista de argumentos, por exemplo, na função print. A função do ponto é 
+# separar a parte inteira da parte decimal do número.
+
+print (1.1, 10.11)
+print (0.0, -0.0)
+
+# a função type mostra o tipo que o python inferiu para o valor.
+#tudo em python é um objeto, e tudo tem um tipo. O tipo é uma informação que o python usa para determinar como manipular o valor.
+#  O tipo é inferido pelo python com base no valor que é atribuído a uma variável ou passado como argumento para uma função.
+
+print(type('junior') )
+print(type(0) )
+print(type(1), type(-1), type(1.1), type(-1.1) )
+
