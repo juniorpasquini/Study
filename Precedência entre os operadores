@@ -1,0 +1,9 @@
+# 1. (n + n) a primemira coisa a ser executada será o que estiver dentro dos parênteses
+# 2. 2. ** depois de parênteses, o próximo operador a ser executado é o de exponenciação
+# 3. * / // % depois de parênteses e exponenciação, os próximos operadores a serem executados são os de multiplicação, divisão, divisão 
+# inteira e módulo
+# 4. + - a última coisa realizada é a adição e subtração
+
+conta_1 = (1 + int(0.5 + 0.5)) ** (5 + 5)
+
+print (conta_1)
