@@ -1,0 +1,92 @@
+# Exercicio 00 - escrever 10x o meu nome
+
+nome = 'Junior'
+for i in range(10):
+    print (nome, end=' ')
+   
+# Exercício 1: O Calculador de Orçamento (ArchViz Style)
+# o que fazer?
+# Crie uma variável para o nome_do_cliente.
+# Crie uma variável para a quantidade_de_renders (inteiro).
+# Crie uma variável para o preco_por_render (float).
+# Crie uma variável chamada valor_total que multiplique os dois valores acima.
+# Crie uma variável booleana projeto_grande que verifique se o valor_total é maior que R$ 5.000,00.
+# Imprima tudo no terminal.
+
+nome = 'fulano'
+quantidade_de_renders = 25
+preco_por_render = 250
+valor_total = quantidade_de_renders * preco_por_render
+projeto_grande = valor_total > 5000
+projeto_pequeno = valor_total <= 5000
+
+print ('nome:', nome)
+print ('quantidade de renders:', quantidade_de_renders)
+print ('preço por render:', preco_por_render)
+print ('valor total:', valor_total)
+print ('projeto grande:', projeto_grande)
+print ('projeto pequeno:', projeto_pequeno)
+
+# Exercício 2: O Criador de Cabeçalhos (Repetição e Concatenação)
+# O que fazer?
+# Crie uma variável chamada titulo com o valor 'RELATÓRIO DE VENDAS'.
+# Crie uma variável chamada divisor que use o caractere = repetido 30 vezes (usando o operador *).
+# Imprima: divisor, titulo, divisor, cada um em uma linha.
+
+relatorio = 'Relatório de Vendas'
+divisor = '=' * 30
+
+print (divisor)
+print (relatorio)
+print (divisor)
+
+# Exercício 3: Cálculo de IMC e Lógica
+# Crie variáveis para nome, peso e altura.
+# Calcule o IMC (a fórmula é: $peso / (altura * altura)$).
+# Crie uma variável booleana chamada abaixo_do_peso que verifique se o IMC é menor que 18.5.
+# Imprima o nome da pessoa, o IMC calculado e o resultado da verificação (True ou False).
+
+nome = 'junior'
+peso = 70
+altura = 1.76
+imc = peso / (altura * altura)
+abaixo_do_peso = imc <18.5
+
+print ('nome:', nome)
+print ('peso', peso)
+print ('altura:', altura)
+print ('IMC:', abaixo_do_peso)
+
+# Imagine que você recebeu um pedido para calcular a quantidade de tinta necessária para
+# pintar o piso de uma sala retangular. Você precisa criar um pequeno script que processe os
+# dados e informe se o material que o cliente já tem em mãos é suficiente.
+
+# O que o seu código deve fazer:
+
+# 1. Variáveis de Entrada (Declare os valores abaixo):
+# largura: valor 5.0 (tipo float)
+# comprimento: valor 7.0 (tipo float)
+# rendimento_tinta: valor 10 (quantos m² um litro de tinta cobre)
+# capacidade_lata: valor 18 (quantos litros tem a lata de tinta que o cliente possui)
+
+# 2. Processamento (Aplique a lógica):
+# Crie a variável area_total: multiplique a largura pelo comprimento.
+# Crie a variável litros_necessarios: divida a area_total pelo rendimento_tinta.
+# Crie a variável booleana uma_lata_atende: verifique se a capacidade_lata é maior ou igual aos litros_necessarios.
+ 
+# 3. Saída de Dados (Exiba no terminal):
+# Exiba o valor da área calculada.
+# Exiba a quantidade de litros de tinta necessária.
+# Exiba o resultado da verificação (True ou False) para saber se uma única lata de 18L será o suficiente.
+
+largura = 5.0
+comprimento = 7.0
+rendimento_tinta = 10
+capacidade_lata = 18
+area_total = largura * comprimento
+litros_necessarios = area_total / rendimento_tinta
+uma_lata_atende = capacidade_lata >= litros_necessarios
+
+print ('area total:', area_total)
+print ('litros necessários:', litros_necessarios)
+print ('uma lata atende:', uma_lata_atende)
