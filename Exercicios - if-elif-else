@@ -1,0 +1,93 @@
+"""""
+Exercício 1: O Ping do Servidor 
+Você precisa criar um script que avalie a qualidade da conexão de um jogador com o servidor.
+O que fazer:
+Peça para o usuário digitar o ping atual (use input e converta para int).
+Crie a lógica:
+Se o ping for menor ou igual a 20: imprima "Conexão Excelente!".
+Se o ping for menor ou igual a 80: imprima "Conexão Jogável.".
+Se for maior que 80 (ou seja, o que sobrar no else): imprima "Alerta de Lag! Vai travar.".
+
+Observações: parâmetros de comparação não são necessários em variáveis separadas; basta usar o valor diretamente nas condições.
+    
+"""
+
+
+"""
+Exercício 2: O Desconto na Loja de Hardware 
+Vamos treinar o if/elif/else misturado com um cálculo matemático simples. Uma loja de peças de computador dá descontos baseados no valor da compra.
+O que fazer:
+Peça para o usuário digitar o valor total da compra (use input e converta para float).
+Crie a lógica:
+Se a compra for maior ou igual a R$ 1000.00: o cliente ganha 10% de desconto. Calcule o novo valor e imprima: "Desconto de 10% aplicado. Novo valor: R$ [valor]".
+Se a compra for maior ou igual a R$ 500.00: o cliente ganha 5% de desconto. Calcule o novo valor e imprima: "Desconto de 5% aplicado. Novo valor: R$ [valor]".
+Se for menor que 500 (else): não tem desconto. Imprima: "Valor normal: R$ [valor]".
+(Dica: Para calcular 10% de desconto, você pode multiplicar o valor por 0.90, ou calcular os 10% e subtrair do total).
+
+"""
+
+"""
+Exercício 3: Classificador de Renderização 
+Imagine que você tem uma fazenda de renderização e precisa classificar o peso do projeto do cliente baseado no tempo estimado que o software calculou.
+O que fazer:
+Peça para o usuário digitar o tempo estimado do render em minutos (use input e int).
+Crie a lógica:
+Se o tempo for menor ou igual a 30 minutos: imprima "Projeto Leve: Renderização Rápida".
+Se o tempo for menor ou igual a 120 minutos: imprima "Projeto Médio: Renderização Padrão".
+Se for maior que 120 minutos (else): imprima "Projeto Pesado: Deixe o PC trabalhando e vá tomar um café".
+
+
+
+"""
+'''
+#exercicio 1
+
+valor_ping = int (input('Digite Sua Conexão: '))
+
+
+
+if valor_ping <= 20:
+    print('Conexão Excelente!')
+
+elif valor_ping <= 80:               
+    print('Conexão Jogável.')
+
+else:
+    print('Alerta de Lag! Vai travar.')  
+
+'''
+
+
+'''
+#exercicio 2
+
+valor_da_compra = float (input ('digite o valor da compra R$: '))
+
+if valor_da_compra >= 1000:
+   valor_com_desconto = valor_da_compra * 0.90
+   print(f'Desconto de 10% aplicado R$ {valor_com_desconto:.2f}')
+
+elif valor_da_compra >= 500:
+    valor_com_desconto = valor_da_compra * 0.95
+    print(f'Desconto de 5% aplicado R$ {valor_com_desconto:.2f}')
+
+else:   
+    print (f'O valor da compra é R$ {valor_da_compra:.2f}')
+
+'''
+
+'''
+#Exercicio 3
+
+tempo_de_render = int (input ('Digite o tempo de renderização em minutos: '))
+
+if tempo_de_render <= 30 :
+    print(f'Projeto Leve: Renderização Rápida')
+
+elif tempo_de_render <= 120:
+    print(f'Projeto Médio: Renderização Padrão')
+
+else:
+    print(f'projeto Pesado: Deixe o PC trabalhando e vá tomar um café')
+
+'''
