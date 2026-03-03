@@ -1,0 +1,36 @@
+#formula imc. IMC = PESO / (ALTURA X ALTURA)
+
+print ('=' * 30)
+nome = 'junior'
+
+
+altura = 1.75
+peso = 55
+imc = peso / (altura * altura)
+abaixo_do_peso = imc <18.5
+
+print ('nome:', nome)
+print ('altura:', altura)
+print ('peso:', peso)
+print ('IMC:', imc)
+print ('abaixo do peso:', abaixo_do_peso)
+
+print ('=' * 30)
+
+#solucao_do_professor:
+
+nome = 'Luiz Otávio'
+altura = 1.80
+peso = 95
+imc = peso / altura ** 2
+
+print(nome, 'tem', altura, 'de altura,',)
+print('pesa', peso, 'quilos e seu imc é',)
+print(imc)
+
+#exercicio
+# Luiz Otávio tem 1.80 de altura,
+# pesa 95 quilos e seu IMC é
+# 29.320987654320987
+
+
